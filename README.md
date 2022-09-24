@@ -3,11 +3,11 @@
 <h1>House Rocket</h1>
 
 <p>This is a fictional project for studying purposes. The business context and the insights are not real. 
-The dataset used in this project is from Kaggle and it is available <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">there</a>.</p>
+The dataset used in this project is from Kaggle and it is from Rossmann, a large drug store chain in Europe with many stores all over the continent. The dataset is available on <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>.</p>
 
 <h2>1. Description of the Business Problem</h2>
 
-<p></p>
+<p>The CEO from Rossmann wants to make some investments to renovate all stores and asked the managers of all the stores to say what the income of all the stores will be in the next 6 weeks so that he can decide how much to invest in each store based on that. All the managers asked the data department from Rossmann for a way to answear the CEO accurately.</p>
 
 <h3>The questions to be answered:</h3>
 
@@ -15,12 +15,13 @@ The dataset used in this project is from Kaggle and it is available <a href="htt
 
 <h3>The tools that were created:</h3>
 
-<p></p>
-<p></p>
+<p><b>Machine Learning Regression Model: </b>The notebook used to create the model is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/store_sales_prediction.ipynb" target="_blank">here</a>.</p>
+<p><b>Flask Prediction API: </b>The API source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/webapp/handler.py" target="_blank">here</a>.</p>
+<p><b>Telegram Chat Bot: </b>The Bot source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/rossmann-telegram-api/rossmann-bot.py" target="_blank">here</a>.</p>
 
 <h2>2. Dataset Attributes</h2>
 
-<p>Information about the atrributes can be found <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">here</a>.</p>
+<p>Information about the attributes can be found <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">here</a>.</p>
 
 <table style="width:100%">
 <tr><th>Attribute</th><th>Description</th></tr>
@@ -79,20 +80,16 @@ The dataset used in this project is from Kaggle and it is available <a href="htt
 <p><b>I5:</b> </p>
 <p><b>True:</b> </p>
 
-<h2>6. Possible Profit of the Solution</h2>
+<h2>6. Conclusion</h2>
 
-<p></p>
-<p></p>
+<p>A XGBoost prediction model was created using the dataset from Kaggle and a chat bot that answear the income for the next 6 weeks was also developed. Now, the CEO can have acess easily to the income of each store by simple sending a message to the chat bot.</p>
 
-<h2>7. Conclusion</h2>
-
-<p></p>
-
-<h2>8. Future Work</h2>
+<h2>7. Future Work</h2>
 
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Create a options menu to the Telegram Bot.</li>
+<li>Develop a model to determine the profit of the next day, month and year.</li>
+<li>Improve model prediction capabilities by adding new features.</li>
+<li>Search for stores with a high prediction error and find a way to enhance the predition of them.</li>
+<li>Try other machine learning algorithms.</li>
 </ul>
