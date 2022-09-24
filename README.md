@@ -1,6 +1,6 @@
 <img src="img/sales.jpg" alt="logo" style="zoom:100%;" />
 
-<h1>House Rocket</h1>
+<h1>Rossmann Stores Sales Prediction</h1>
 
 <p>This is a fictional project for studying purposes. The business context and the insights are not real. 
 The dataset used in this project is from Kaggle and it is from Rossmann, a large drug store chain in Europe with many stores all over the continent. The dataset is available on <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>.</p>
