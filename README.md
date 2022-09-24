@@ -1,4 +1,4 @@
-<img src="real_state_market.jpg" alt="logo" style="zoom:100%;" />
+<img src="img/sales.jpg" alt="logo" style="zoom:100%;" />
 
 <h1>House Rocket</h1>
 
