@@ -15,7 +15,7 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 
 <p><b>Flask Prediction API: </b>The model is available on the cloud Heroku and can be acessible by an API created using Flask. The API source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/webapp/handler.py" target="_blank">here</a>.</p>
 
-<p><b>Telegram Chat Bot: </b>A chat bot on Telegram (a desktop and messaging app) is available so that the CEO can send the id number of a store and the prediction of the sales for the next 6 weeks will be available there. You can clink <a href="https://t.me/rossmann_ma_bot" target="_blank">here</a> to check it out sending a number up to 4 digits. The Bot source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/rossmann-telegram-api/rossmann-bot.py" target="_blank">here</a>.</p>
+<p><b>Telegram Chat Bot: </b>A chat bot on Telegram (a desktop and messaging app) is available so that the CEO can send the id number of a store and the prediction of the sales for the next 6 weeks will be available there. You can clik <a href="https://t.me/rossmann_ma_bot" target="_blank">here</a> to check it out sending a number up to 4 digits. The Bot source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/rossmann-telegram-api/rossmann-bot.py" target="_blank">here</a>.</p>
 
 <h2>2. Dataset Attributes</h2>
 
@@ -46,7 +46,7 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 
 <ul>
 <li>The model will be available on Github, so it has to be smaller than 50 Mb.</li>
-<li></li>
+<li>Extra assortment is greater tha extended and basic.</li>
 <li></li>
 <li></li>
 <li></li>
@@ -70,16 +70,28 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 
 <h2>5. The Insights</h2>
 
-<p><b>I1:</b> </p>
-<p><b>True:</b> </p>
-<p><b>I2:</b> </p>
-<p><b>True:</b> </p>
-<p><b>I3:</b> </p>
-<p><b>True:</b> </p>
-<p><b>I4:</b> </p>
-<p><b>True:</b> </p>
-<p><b>I5:</b> </p>
-<p><b>True:</b> </p>
+<p><b>I1:</b> Stores with greater assortments should sell more.</p>
+<p><b>True:</b> Stores with greater assortment sell more.</p>
+<p><b>I2:</b> Stores with closer competitors should sell less.</p>
+<p><b>False:</b> Stores with closer competitors sells almost the same average amount than the others.</p>
+<p><b>I3:</b> Stores that have a competitor for longer periods of time should sell more.</p>
+<p><b>False:</b> Stores with competitors for a longer time sell less.</p>
+<p><b>I4:</b> Stores with longer active promotions should sell more.</p>
+<p><b>False:</b> Store with longer promotions stop selling more after some time.</p>
+<p><b>I5:</b> Stores with more consecutive promotions should sell more.</p>
+<p><b>False:</b> Stores with more consecutive promotions sell less.</p>
+<p><b>I6:</b> Stores open during the Christmas holiday should sell more.</p>
+<p><b>False:</b> Stores open during Christmas don't sell more.</p>
+<p><b>I7:</b> Stores should sell more over the years.</p>
+<p><b>False:</b> Stores sell less over the years.</p>
+<p><b>I8:</b> Stores should sell more in the second half of the year.</p>
+<p><b>True:</b> The stores sell more in the second half of the year.</p>
+<p><b>I9:</b> Stores should sell more after the 10th of each month.</p>
+<p><b>True:</b> Stores really sell more after the 10th day of each month.</p>
+<p><b>I10:</b> Stores should sell less on weekends.</p>
+<p><b>True:</b> Saturday and Sun are the worst seling days.</p>
+<p><b>I11:</b> Stores should sell less during school holidays.</p>
+<p><b>True:</b> Stores sellless during school holiday except for the august.</p>
 
 <h2>6. Conclusion</h2>
 
