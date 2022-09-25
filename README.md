@@ -45,13 +45,10 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 <h3>The premises that were assumed for the development of the business problem solution are:</h3>
 
 <ul>
-<li>The model will be available on Github, so it has to be smaller than 50 Mb.</li>
+<li>The model will be available on Github, so the model file has to be smaller than 50 Mb.</li>
 <li>Extra assortment is greater tha extended and basic.</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Stores that have no competitors in the dataset (CompetitionDIstance and CompetitionOpenSince[Month/Year] not available) were interpreted as stores that have no competitors near them.</li>
+<li>The number 200000 was considered as a good one to replace the NA values on the column CompetitionDistance for stores with no competitors meaning that the nearest competitor is very far.</li>
 </ul>
 
 <h2>4. Solution Strategy</h2>
