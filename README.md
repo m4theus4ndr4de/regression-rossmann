@@ -3,21 +3,17 @@
 <h1>Rossmann Stores Sales Prediction</h1>
 
 <p>This is a fictional project for studying purposes. The business context and the insights are not real. 
-The dataset used in this project is from Kaggle and it is from Rossmann, a large drug store chain in Europe with many stores all over the continent. The dataset is available on <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>.</p>
+The dataset is from Rossmann, a large drug store chain in Europe with many stores all over the continent. The dataset is available on <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>.</p>
 
 <h2>1. Description of the Business Problem</h2>
 
-<p>The CEO from Rossmann wants to make some investments to renovate all stores and asked the managers of all the stores to say what the income of all the stores will be in the next 6 weeks so that he can decide how much to invest in each store based on that. All the managers asked the data department from Rossmann for a way to answear the CEO accurately.</p>
-
-<h3>The questions to be answered:</h3>
-
-<p>The source code can be found <a href="" target="_blank">here</a>.</p>
+<p>The CEO from Rossmann wants to make some investments to renovate all stores and asked the managers of all the stores to say what the income of all the stores will be in the next 6 weeks so that he can decide how much to invest in each store based on that. All the managers asked the data department from Rossmann for a way to answear the CEO accurately. So, a regression model would be of great help.</p>
 
 <h3>The tools that were created:</h3>
 
-<p><b>Machine Learning Regression Model: </b>The notebook used to create the model is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/store_sales_prediction.ipynb" target="_blank">here</a>.</p>
-<p><b>Flask Prediction API: </b>The API source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/webapp/handler.py" target="_blank">here</a>.</p>
-<p><b>Telegram Chat Bot: </b>The Bot source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/rossmann-telegram-api/rossmann-bot.py" target="_blank">here</a>.</p>
+<p><b>Machine Learning Regression Model: </b>Using the dataset from <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>, a machine learning regression model was created to be use for future predictions.</p>The notebook used to create the model is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/store_sales_prediction.ipynb" target="_blank">here</a>.</p>
+<p><b>Flask Prediction API: </b>The model is available on the cloud Heroku and can be acessible by an API created using Flask. The API source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/webapp/handler.py" target="_blank">here</a>.</p>
+<p><b>Telegram Chat Bot: A chat bot on Telegram (a desktop and messaging app) is available so that the CEO can send the id number of a store and the prediction of the sales for the next 6 weeks will be available there. You can clink <a href="https://t.me/rossmann_ma_bot" target="_blank">here</a> to check it out sending a number up to 4 digits. </b>The Bot source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/rossmann-telegram-api/rossmann-bot.py" target="_blank">here</a>.</p>
 
 <h2>2. Dataset Attributes</h2>
 
@@ -47,7 +43,7 @@ The dataset used in this project is from Kaggle and it is from Rossmann, a large
 <h3>The premises that were assumed for the development of the business problem solution are:</h3>
 
 <ul>
-<li></li>
+<li>The model will be available on Github, so it has to be smaller than 50 Mb.</li>
 <li></li>
 <li></li>
 <li></li>
@@ -59,12 +55,15 @@ The dataset used in this project is from Kaggle and it is from Rossmann, a large
 <h2>4. Solution Strategy</h2>
 
 <ol>
+<li>Understand the Business problem.</li>
 <li>Download the dataset from <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>.</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Clean the dataset removing outliers, NA values and unnecessary features.</li>
+<li>Explore the data to create hypothesis, think about a few insights and validate them.</li>
+<li>Prepare the data to be used by the modeling algorithms encoding variables, splitting train and test dataset and other necessary operations</li>
+<li>Create the models using machine learning algorithms.</li>
+<li>Evaluate the created models to find the one that best fits to your problem.</li>
+<li>Deploy the model in production so that it is available to the user.</li>
+<li>Find possible improvements to be explored in the future.</li>
 </ol>
 
 <h2>5. The Insights</h2>
@@ -82,12 +81,13 @@ The dataset used in this project is from Kaggle and it is from Rossmann, a large
 
 <h2>6. Conclusion</h2>
 
-<p>A XGBoost prediction model was created using the dataset from Kaggle and a chat bot that answear the income for the next 6 weeks was also developed. Now, the CEO can have acess easily to the income of each store by simple sending a message to the chat bot.</p>
+<p>The XGBoost prediction model was chosen because it can be trained faster than a Random Forest model using a GPU. The model used in deployment was not the best one, but it is considerably smaller than the others, because it has a smaller number of estimators, and the error metrics are not so distant from the best model. A chat bot that answears the income for the next 6 weeks was also developed to work like a hands on tool. Now, the CEO can have access easily to the income of each store by simple sending a message to the chat bot.</p>
 
 <h2>7. Future Work</h2>
 
 <ul>
-<li>Create a options menu to the Telegram Bot.</li>
+<li>Develop some more features to the bot.</li>
+<li>Create an options menu to the Telegram Bot.</li>
 <li>Develop a model to determine the profit of the next day, month and year.</li>
 <li>Improve model prediction capabilities by adding new features.</li>
 <li>Search for stores with a high prediction error and find a way to enhance the predition of them.</li>
