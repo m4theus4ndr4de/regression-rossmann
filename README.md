@@ -58,7 +58,7 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 <li>Download the dataset from <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>.</li>
 <li>Clean the dataset removing outliers, NA values and unnecessary features.</li>
 <li>Explore the data to create hypothesis, think about a few insights and validate them.</li>
-<li>Prepare the data to be used by the modeling algorithms encoding variables, splitting train and test dataset and other necessary operations</li>
+<li>Prepare the data to be used by the modeling algorithms encoding variables, splitting train and test dataset and other necessary operations.</li>
 <li>Create the models using machine learning algorithms.</li>
 <li>Evaluate the created models to find the one that best fits to your problem.</li>
 <li>Deploy the model in production so that it is available to the user.</li>
