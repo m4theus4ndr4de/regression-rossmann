@@ -2,20 +2,20 @@
 
 <h1>Drugstore Sales Prediction</h1>
 
-<p>This is a fictional project for studying purposes. The business context and the insights are not real. 
+<p align="justify">This is a fictional project for studying purposes. The business context and the insights are not real. 
 The dataset is from Rossmann, a large drug store chain in Europe with many stores all over the continent. The dataset is available on <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>.</p>
 
 <h2>1. Description of the Business Problem</h2>
 
-<p>The CEO from Rossmann wants to make some investments to renovate all stores and asked the managers of all the stores to say what the income of all the stores will be in the next 6 weeks so that he can decide how much to invest in each store based on that. All the managers asked the data department from Rossmann for a way to answear the CEO accurately. So, a regression model would be of great help.</p>
+<p align="justify">The CEO from Rossmann wants to make some investments to renovate all stores and asked the managers of all the stores to say what the income of all the stores will be in the next 6 weeks so that he can decide how much to invest in each store based on that. All the managers asked the data department from Rossmann for a way to answear the CEO accurately. So, a regression model would be of great help.</p>
 
 <h3>The tools that were created:</h3>
 
-<p><b>Machine Learning Regression Model: </b>Using the dataset from <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>, a machine learning regression model was created to be use for future predictions.</p>The notebook used to create the model is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/store_sales_prediction.ipynb" target="_blank">here</a>.</p>
+<p align="justify"><b>Machine Learning Regression Model: </b>Using the dataset from <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>, a machine learning regression model was created to be use for future predictions.</p>The notebook used to create the model is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/store_sales_prediction.ipynb" target="_blank">here</a>.</p>
 
-<p><b>Flask Prediction API: </b>The model is available on the cloud Heroku and can be acessible by an API created using Flask. The API source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/webapp/handler.py" target="_blank">here</a>.</p>
+<p align="justify"><b>Flask Prediction API: </b>The model is available on the cloud Heroku and can be acessible by an API created using Flask. The API source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/webapp/handler.py" target="_blank">here</a>.</p>
 
-<p><b>Telegram Chat Bot: </b>A chat bot on Telegram (a desktop and messaging app) is available so that the CEO can send the id number of a store and the prediction of the sales for the next 6 weeks will be available there. You can clik <a href="https://t.me/rossmann_ma_bot" target="_blank">here</a> to check it out sending a number up to 4 digits. The Bot source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/rossmann-telegram-api/rossmann-bot.py" target="_blank">here</a>.</p>
+<p align="justify"><b>Telegram Chat Bot: </b>A chat bot on Telegram (a desktop and messaging app) is available so that the CEO can send the id number of a store and the prediction of the sales for the next 6 weeks will be available there. You can clik <a href="https://t.me/rossmann_ma_bot" target="_blank">here</a> to check it out sending a number up to 4 digits. The Bot source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/rossmann-telegram-api/rossmann-bot.py" target="_blank">here</a>.</p>
 
 <h2>2. Dataset Attributes</h2>
 
@@ -93,9 +93,9 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 
 <h2>6. Machine Learning Modeling</h2>
 
-<p>The final result of this project is a regression model. Therefore, some machine learning models were created. In all, 5 models were created, one of them is a simple model that calculates the average sales to serve as a comparison with machine learning models. The other models initially created were Linear Regression, Regularized Linear Regression, Random Forest and XGBoost.</p>
+<p align="justify">The final result of this project is a regression model. Therefore, some machine learning models were created. In all, 5 models were created, one of them is a simple model that calculates the average sales to serve as a comparison with machine learning models. The other models initially created were Linear Regression, Regularized Linear Regression, Random Forest and XGBoost.</p>
 
-<p>The Boruta algorithm was used to select features for the model and 18 features were selected to the final model. The models were evaluated considering three metrics, Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE) and Root Mean Squared Error (RMSE). The initial models performances are in the table below.</p>
+<p align="justify">The Boruta algorithm was used to select features for the model and 18 features were selected to the final model. The models were evaluated considering three metrics, Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE) and Root Mean Squared Error (RMSE). The initial models performances are in the table below.</p>
 
 <table style="width:100%">
 <tr><th>Model Name</th><th>MAE</th><th>MAPE</th><th>RMSE</th></tr>
@@ -108,7 +108,7 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 
 <h2>7. Final Model</h2>
 
-<p>To decide which would be the final model, a cross-validation was carried out to evaluate the performance of the algorithms in a more robust way. These metrics are represented in the table below.</p>
+<p align="justify">To decide which would be the final model, a cross-validation was carried out to evaluate the performance of the algorithms in a more robust way. These metrics are represented in the table below.</p>
 
 <table style="width:100%">
 <tr><th>Model Name</th><th>MAE</th><th>MAPE</th><th>RMSE</th></tr>
@@ -118,7 +118,7 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 <tr><td>Lasso</td><td>2388.68 +/- 398.48</td><td>0.34 +/- 0.01</td><td>3369.37 +/- 567.55</td></tr>
 </table>
 
-<p>The Random Forest model was the best among all the models created. However, XGBoost was chosen to be deployed because it tends to take up less disk space than Random Forest. After choosing which would be the final model, a random search hyperparameter optimization was used to improve the performance of the model. The final model evaluation metrics are in the table below.</p>
+<p align="justify">The Random Forest model was the best among all the models created. However, XGBoost was chosen to be deployed because it tends to take up less disk space than Random Forest. After choosing which would be the final model, a random search hyperparameter optimization was used to improve the performance of the model. The final model evaluation metrics are in the table below.</p>
 
 <table style="width:100%">
 <tr><th>Model Name</th><th>MAE</th><th>MAPE</th><th>RMSE</th></tr>
@@ -127,7 +127,7 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 
 <h2>8. Conclusion</h2>
 
-<p>The XGBoost prediction model was chosen because it can be trained faster than a Random Forest model using a GPU. The model used in deployment was not the best one, but it is considerably smaller than the others, because it has a smaller number of estimators, and the error metrics are not so distant from the best model. A chat bot that answears the income for the next 6 weeks was also developed to work like a hands on tool. Now, the CEO can have access easily to the income of each store by simple sending a message to the chat bot.</p>
+<p align="justify">The XGBoost prediction model was chosen because it can be trained faster than a Random Forest model using a GPU. The model used in deployment was not the best one, but it is considerably smaller than the others, because it has a smaller number of estimators, and the error metrics are not so distant from the best model. A chat bot that answears the income for the next 6 weeks was also developed to work like a hands on tool. Now, the CEO can have access easily to the income of each store by simple sending a message to the chat bot.</p>
 
 <h2>9. Future Work</h2>
 
