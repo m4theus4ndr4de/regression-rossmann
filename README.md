@@ -61,6 +61,7 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 <li>Prepare the data to be used by the modeling algorithms encoding variables, splitting train and test dataset and other necessary operations.</li>
 <li>Create the models using machine learning algorithms.</li>
 <li>Evaluate the created models to find the one that best fits to your problem.</li>
+<li>Tune the model to achieve a better performance.</li>
 <li>Deploy the model in production so that it is available to the user.</li>
 <li>Find possible improvements to be explored in the future.</li>
 </ol>
@@ -90,11 +91,42 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 <p><b>I11:</b> Stores should sell less during school holidays.</p>
 <p><b>True:</b> Stores sellless during school holiday except for the august.</p>
 
-<h2>6. Conclusion</h2>
+<h2>6. Machine Learning Modeling</h2>
+
+<p>The final result of this project is a regression model. So a few models were created as options. Therefore, some machine learning models were created. In all, 5 models were created, one of them is a simple model that calculates the average sales to serve as a comparison with machine learning models. The other models initially created were Linear Regression, Regularized Linear Regression, Random Forest and XGBoost.</p>
+
+<p>The Boruta algorithm was used to select features for the model and 18 features were selected to the final model. The models were evaluated considering three metrics, Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE) and Root Mean Squared Error (RMSE). The initial models performances are in the table below.</p>
+
+<table style="width:100%">
+<tr><th>Model Name</th><th>MAE</th><th>MAPE</th><th>RMSE</th></tr>
+<tr><td>Random Forest Regressor</td><td>680.19</td><td>0.10</td><td>1008.96</td></tr>
+<tr><td>XGBoost Regressor</td><td>874.26</td><td>0.13</td><td>1256.33</td></tr>
+<tr><td>Average Model</td><td>1354.80</td><td>0.46</td><td>1835.14</td></tr>
+<tr><td>Linear Regression</td><td>1867.09</td><td>0.29</td><td>2671.05</td></tr>
+<tr><td>Lasso</td><td>2198.58</td><td>0.34</td><td>3110.51</td></tr>
+
+<h2>7. Final Model</h2>
+
+<p>To decide which would be the final model, a cross-validation was carried out to evaluate the performance of the algorithms in a more robust way. These metrics are represented in the table below.</p>
+
+<table style="width:100%">
+<tr><th>Model Name</th><th>MAE</th><th>MAPE</th><th>RMSE</th></tr>
+<tr><td>Random Forest Regressor</td><td>837.52 +/- 216.76</td><td>0.12 +/- 0.02</td><td>1254.42 +/- 316.65</td></tr>
+<tr><td>XGBoost Regressor</td><td>1069.47 +/- 139.48</td><td>0.15 +/- 0.02</td><td>1523.41 +/- 182.76</td></tr>
+<tr><td>Linear Regression</td><td>2081.73 +/- 295.63</td><td>0.3 +/- 0.02</td><td>2952.52 +/- 468.37</td></tr>
+<tr><td>Lasso</td><td>2388.68 +/- 398.48</td><td>0.34 +/- 0.01</td><td>3369.37 +/- 567.55</td></tr>
+
+<p>The Random Forest model was the best among all the models created. However, XGBoost was chosen to be deployed because it tends to take up less disk space than Random Forest. After choosing which would be the final model, a random search hyperparameter optimization was used to improve the performance of the model. The final model evaluation metrics are in the table below.</p>
+
+<table style="width:100%">
+<tr><th>Model Name</th><th>MAE</th><th>MAPE</th><th>RMSE</th></tr>
+<tr><td>XGBoost Regressor</td><td>653.39</td><td>0.10</td><td>956.03</td></tr>
+
+<h2>8. Conclusion</h2>
 
 <p>The XGBoost prediction model was chosen because it can be trained faster than a Random Forest model using a GPU. The model used in deployment was not the best one, but it is considerably smaller than the others, because it has a smaller number of estimators, and the error metrics are not so distant from the best model. A chat bot that answears the income for the next 6 weeks was also developed to work like a hands on tool. Now, the CEO can have access easily to the income of each store by simple sending a message to the chat bot.</p>
 
-<h2>7. Future Work</h2>
+<h2>9. Future Work</h2>
 
 <ul>
 <li>Develop some more features to the bot.</li>
