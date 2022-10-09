@@ -104,6 +104,7 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 <tr><td>Average Model</td><td>1354.80</td><td>0.46</td><td>1835.14</td></tr>
 <tr><td>Linear Regression</td><td>1867.09</td><td>0.29</td><td>2671.05</td></tr>
 <tr><td>Lasso</td><td>2198.58</td><td>0.34</td><td>3110.51</td></tr>
+</table>
 
 <h2>7. Final Model</h2>
 
@@ -115,12 +116,14 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 <tr><td>XGBoost Regressor</td><td>1069.47 +/- 139.48</td><td>0.15 +/- 0.02</td><td>1523.41 +/- 182.76</td></tr>
 <tr><td>Linear Regression</td><td>2081.73 +/- 295.63</td><td>0.3 +/- 0.02</td><td>2952.52 +/- 468.37</td></tr>
 <tr><td>Lasso</td><td>2388.68 +/- 398.48</td><td>0.34 +/- 0.01</td><td>3369.37 +/- 567.55</td></tr>
+</table>
 
 <p>The Random Forest model was the best among all the models created. However, XGBoost was chosen to be deployed because it tends to take up less disk space than Random Forest. After choosing which would be the final model, a random search hyperparameter optimization was used to improve the performance of the model. The final model evaluation metrics are in the table below.</p>
 
 <table style="width:100%">
 <tr><th>Model Name</th><th>MAE</th><th>MAPE</th><th>RMSE</th></tr>
 <tr><td>XGBoost Regressor</td><td>653.39</td><td>0.10</td><td>956.03</td></tr>
+</table>
 
 <h2>8. Conclusion</h2>
 
