@@ -93,7 +93,7 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 
 <h2>6. Machine Learning Modeling</h2>
 
-<p>The final result of this project is a regression model. So a few models were created as options. Therefore, some machine learning models were created. In all, 5 models were created, one of them is a simple model that calculates the average sales to serve as a comparison with machine learning models. The other models initially created were Linear Regression, Regularized Linear Regression, Random Forest and XGBoost.</p>
+<p>The final result of this project is a regression model. Therefore, some machine learning models were created. In all, 5 models were created, one of them is a simple model that calculates the average sales to serve as a comparison with machine learning models. The other models initially created were Linear Regression, Regularized Linear Regression, Random Forest and XGBoost.</p>
 
 <p>The Boruta algorithm was used to select features for the model and 18 features were selected to the final model. The models were evaluated considering three metrics, Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE) and Root Mean Squared Error (RMSE). The initial models performances are in the table below.</p>
 
