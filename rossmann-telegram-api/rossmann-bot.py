@@ -6,7 +6,8 @@ import pandas as pd
 from flask import Flask, request, Response
 
 # constants
-TOKEN = '5682853485:AAHQUlm71Kbjhs4iAUG5pRBAM9vWFplqQXg'
+# old bot token TOKEN = '5682853485:AAHQUlm71Kbjhs4iAUG5pRBAM9vWFplqQXg'
+TOKEN = '5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8'
 
 # info about the bot
 # https://api.telegram.org/bot5682853485:AAHQUlm71Kbjhs4iAUG5pRBAM9vWFplqQXg/getMe
@@ -63,7 +64,7 @@ def load_dataset(store_id):
 def predict(data):
 
     # API Call
-    url = 'https://rossmann-prediction-ma.herokuapp.com/rossmann/predict'
+    url = 'https://m4theus4ndr4de-regression-drugstore-sales--webapphandler-6uqjam.streamlit.app/'
     header = {'Content-type': 'application/json'}
     data = data
 
