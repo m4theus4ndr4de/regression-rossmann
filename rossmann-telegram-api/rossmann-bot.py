@@ -22,7 +22,7 @@ TOKEN = '5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8'
 # https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://git.heroku.com/rossmann-bot-ma.git
 
 # Webhook Streamlit
-# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://m4theus4ndr4de-regress-rossmann-telegram-apirossmann-bot-zabewj.streamlit.app
+# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://m4theus4ndr4de-regression-drugstore-sales--webapphandler-6uqjam.streamlit.app
 
 # send message
 # https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/sendMessage?chat_id=853113587&text=
