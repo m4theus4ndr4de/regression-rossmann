@@ -67,7 +67,7 @@ def load_dataset(store_id):
 def predict(data):
 
     # API Call
-    url = 'https://m4theus4ndr4de-regression-drugstore-sales--webapphandler-6uqjam.streamlit.app//rossmann/predict'
+    url = 'https://m4theus4ndr4de-regression-drugstore-sales--webapphandler-6uqjam.streamlit.app/rossmann/predict'
     header = {'Content-type': 'application/json'}
     data = data
 
