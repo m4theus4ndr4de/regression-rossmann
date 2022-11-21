@@ -10,19 +10,22 @@ from flask import Flask, request, Response
 TOKEN = '5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8'
 
 # info about the bot
-# https://api.telegram.org/bot5682853485:AAHQUlm71Kbjhs4iAUG5pRBAM9vWFplqQXg/getMe
+# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/getMe
 
 # get updates
-# https://api.telegram.org/bot5682853485:AAHQUlm71Kbjhs4iAUG5pRBAM9vWFplqQXg/getUpdates
+# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/getUpdates
 
 # Webhook
-# https://api.telegram.org/bot5682853485:AAHQUlm71Kbjhs4iAUG5pRBAM9vWFplqQXg/setWebhook?url=https://33267f8df5a849.lhrtunnel.link
+# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://33267f8df5a849.lhrtunnel.link
 
 # Webhook Heroku
-# https://api.telegram.org/bot5682853485:AAHQUlm71Kbjhs4iAUG5pRBAM9vWFplqQXg/setWebhook?url=https://git.heroku.com/rossmann-bot-ma.git
+# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://git.heroku.com/rossmann-bot-ma.git
+
+# Webhook Streamlit
+# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://m4theus4ndr4de-regress-rossmann-telegram-apirossmann-bot-zabewj.streamlit.app
 
 # send message
-# https://api.telegram.org/bot5682853485:AAHQUlm71Kbjhs4iAUG5pRBAM9vWFplqQXg/sendMessage?chat_id=853113587&text=
+# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/sendMessage?chat_id=853113587&text=
 
 def send_message(chat_id, text):
 
@@ -64,7 +67,7 @@ def load_dataset(store_id):
 def predict(data):
 
     # API Call
-    url = 'https://m4theus4ndr4de-regression-drugstore-sales--webapphandler-6uqjam.streamlit.app/'
+    url = 'https://m4theus4ndr4de-regression-drugstore-sales--webapphandler-6uqjam.streamlit.app//rossmann/predict'
     header = {'Content-type': 'application/json'}
     data = data
 
