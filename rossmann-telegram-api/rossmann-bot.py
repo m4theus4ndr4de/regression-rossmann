@@ -21,8 +21,8 @@ TOKEN = '5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8'
 # Webhook Heroku
 # https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://git.heroku.com/rossmann-bot-ma.git
 
-# Webhook Streamlit
-# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://m4theus4ndr4de-regression-drugstore-sales--webapphandler-6uqjam.streamlit.app
+# Webhook Render
+# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://drugstore-sales-prediction-telegram-bot.onrender.com
 
 # send message
 # https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/sendMessage?chat_id=853113587&text=
@@ -83,7 +83,7 @@ def parse_message(message):
     chat_id = message['message']['chat']['id']
     store_id = message['message']['text']
 
-    store_id = store_id.replace('/','')
+    store_id = store_id.replace('/', '')
 
     try:
         store_id = int(store_id)
@@ -139,8 +139,8 @@ def index():
             return Response('OK', status=200)
 
     else:
-        return '<h1>Rossmann Telegram Bot</h1>'
+        return '<h1>Drugstore Sales Prediction Telegram Bot</h1>'
 
 if __name__ == '__main__':
-    port = os.environ.get('PORT', 5002)
+    port = os.environ.get('PORT', 5000)
     app.run(host='0.0.0.0', port=port)
