@@ -15,9 +15,6 @@ TOKEN = '5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8'
 # get updates
 # https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/getUpdates
 
-# Webhook
-# https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://33267f8df5a849.lhrtunnel.link
-
 # Webhook Heroku
 # https://api.telegram.org/bot5959064444:AAF4JKQsH_7t1LqbnrhwHJgA-n-cj9Hgjc8/setWebhook?url=https://git.heroku.com/rossmann-bot-ma.git
 
