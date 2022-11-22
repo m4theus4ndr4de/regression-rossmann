@@ -13,7 +13,7 @@ The dataset is from Rossmann, a large drug store chain in Europe with many store
 
 <p align="justify"><b>Machine Learning Regression Model: </b>Using the dataset from <a href="https://www.kaggle.com/competitions/rossmann-store-sales/data" target="_blank">Kaggle</a>, a machine learning regression model was created to be used for future predictions.</p> The notebook used to create the model is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/store_sales_prediction.ipynb" target="_blank">here</a>.</p>
 
-<p align="justify"><b>Flask Prediction API: </b>The model is available on the Streamlit Cloud and can be acessible by an API created using Flask. The API source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/webapp/handler.py" target="_blank">here</a>.</p>
+<p align="justify"><b>Flask Prediction API: </b>The model is available on the Render Cloud and can be acessible by an API created using Flask. The API source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/webapp/handler.py" target="_blank">here</a>.</p>
 
 <p align="justify"><b>Telegram Chat Bot: </b>A chat bot on Telegram (a desktop and messaging app) is available so that the CEO can send the id number of a store and the prediction of the sales for the next 6 weeks will be available there. You can clik <a href="https://t.me/DrugstoreSalesPredictionBOT" target="_blank">here</a> to check it out sending a number up to 4 digits. The Bot source code is available <a href="https://github.com/m4theus4ndr4de/regression-rossmann/blob/main/rossmann-telegram-api/rossmann-bot.py" target="_blank">here</a>.</p>
 
